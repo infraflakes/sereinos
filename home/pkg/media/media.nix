@@ -1,8 +1,10 @@
 {
   config,
   pkgs,
+  inputs,
   ...
 }: {
+  imports = [inputs.spicetify-nix.homeManagerModules.default];
   home.packages = with pkgs; [
     mpd-mpris
     papers
@@ -19,6 +21,19 @@
     imv
     libnotify
   ];
+  programs.spicetify = let
+    spicePkgs = inputs.spicetify-nix.legacyPackages.${pkgs.stdenv.hostPlatform.system};
+  in {
+    enable = true;
+    enabledExtensions = with spicePkgs.extensions; [
+      adblock
+      hidePodcasts
+      shuffle # shuffle+ (special characters are sanitized out of extension names)
+      trashbin
+    ];
+    theme = spicePkgs.themes.catppuccin;
+    colorScheme = "mocha";
+  };
   home.file.".config/rmpc".source = ./config/rmpc;
   home.file.".config/mpd/mpd.conf".text = ''
     music_directory "~/Music"

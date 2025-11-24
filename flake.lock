@@ -108,7 +108,7 @@
     },
     "flake-utils_2": {
       "inputs": {
-        "systems": "systems_2"
+        "systems": "systems_3"
       },
       "locked": {
         "lastModified": 1731533236,
@@ -126,7 +126,7 @@
     },
     "flake-utils_3": {
       "inputs": {
-        "systems": "systems_3"
+        "systems": "systems_4"
       },
       "locked": {
         "lastModified": 1731533236,
@@ -144,7 +144,7 @@
     },
     "flake-utils_4": {
       "inputs": {
-        "systems": "systems_4"
+        "systems": "systems_5"
       },
       "locked": {
         "lastModified": 1731533236,
@@ -369,7 +369,8 @@
         "mangowc": "mangowc",
         "niri": "niri",
         "nixpkgs": "nixpkgs",
-        "serein-cli": "serein-cli",
+        "spicetify-nix": "spicetify-nix",
+        "srn-coreutils": "srn-coreutils",
         "zen-browser": "zen-browser"
       }
     },
@@ -393,28 +394,6 @@
       "original": {
         "owner": "wlrfx",
         "repo": "scenefx",
-        "type": "github"
-      }
-    },
-    "serein-cli": {
-      "inputs": {
-        "flake-utils": "flake-utils_2",
-        "nixpkgs": [
-          "nixpkgs"
-        ],
-        "serein-cli-test": "serein-cli-test"
-      },
-      "locked": {
-        "lastModified": 1761397189,
-        "narHash": "sha256-lPVerShtwFoHxyiVY2w8RFwHI7PvGIgYgaUz8m4F9bo=",
-        "owner": "infraflakes",
-        "repo": "serein-cli",
-        "rev": "1426bee3214921f423dd62c96994cfec0a2c06c8",
-        "type": "github"
-      },
-      "original": {
-        "owner": "infraflakes",
-        "repo": "serein-cli",
         "type": "github"
       }
     },
@@ -456,6 +435,49 @@
         "owner": "nixuris",
         "ref": "main",
         "repo": "serein-cli",
+        "type": "github"
+      }
+    },
+    "spicetify-nix": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "systems": "systems_2"
+      },
+      "locked": {
+        "lastModified": 1763831750,
+        "narHash": "sha256-84LFvgGQSJJ12FPNSiuHjlHSwcEp9enkGh5tGRtw9w8=",
+        "owner": "Gerg-L",
+        "repo": "spicetify-nix",
+        "rev": "ca2ce884882a9a96fa996823b99247a55efb9567",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Gerg-L",
+        "repo": "spicetify-nix",
+        "type": "github"
+      }
+    },
+    "srn-coreutils": {
+      "inputs": {
+        "flake-utils": "flake-utils_2",
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "serein-cli-test": "serein-cli-test"
+      },
+      "locked": {
+        "lastModified": 1763563090,
+        "narHash": "sha256-3rNNj/4bw6Y3JhXykA8DH+6RQNUQ0shn3Rt/u+CdDaU=",
+        "owner": "infraflakes",
+        "repo": "srn-coreutils",
+        "rev": "86acaecf4893209f6eaab358740105ab239740d0",
+        "type": "github"
+      },
+      "original": {
+        "owner": "infraflakes",
+        "repo": "srn-coreutils",
         "type": "github"
       }
     },
@@ -505,6 +527,21 @@
       }
     },
     "systems_4": {
+      "locked": {
+        "lastModified": 1681028828,
+        "narHash": "sha256-Vy1rq5AaRuLzOxct8nz4T6wlgyUR7zLU309k9mBC768=",
+        "owner": "nix-systems",
+        "repo": "default",
+        "rev": "da67096a3b9bf56a91d16901293e51ba5b49a27e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nix-systems",
+        "repo": "default",
+        "type": "github"
+      }
+    },
+    "systems_5": {
       "locked": {
         "lastModified": 1681028828,
         "narHash": "sha256-Vy1rq5AaRuLzOxct8nz4T6wlgyUR7zLU309k9mBC768=",

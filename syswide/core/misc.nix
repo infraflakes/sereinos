@@ -13,6 +13,8 @@
     bluetuith
     pulsemixer
     nmap
+    ripgrep
+    bat
   ];
   # SSH
   services.openssh = {

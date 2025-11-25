@@ -15,6 +15,7 @@
     nmap
     ripgrep
     bat
+    jq
   ];
   # SSH
   services.openssh = {

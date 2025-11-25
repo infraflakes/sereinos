@@ -32,10 +32,9 @@
       '';
     };
     shellAliases = {
-      snix = "serein nix";
-      sgit = "serein git";
-      box = "serein box";
-      archive = "serein archive";
+      snix = "srn nix";
+      sgit = "srn git";
+      archive = "srn archive";
       music = "serein music";
       tm = "tmux new-session -A";
       cd = "z";

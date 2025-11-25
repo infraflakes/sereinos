@@ -18,8 +18,7 @@
       "$HOME/.cargo/bin"
     ];
     packages = [
-      #inputs.srn-coreutils.packages.${pkgs.system}.stable
-      inputs.srn-coreutils.packages.${pkgs.stdenv.hostPlatform.system}.test
+      inputs.srn-coreutils.packages.${pkgs.stdenv.hostPlatform.system}.default
       pkgs.lsd
     ];
   };

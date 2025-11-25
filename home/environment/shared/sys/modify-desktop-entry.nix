@@ -62,6 +62,19 @@
     NoDisplay=true
     Hidden=true
   '';
+  #QT
+  xdg.desktopEntries.qt5ct = {
+    name = "Qt5 Settings";
+    exec = "qt5ct";
+    terminal = true;
+    noDisplay = true;
+  };
+  xdg.desktopEntries.qt6ct = {
+    name = "Qt6 Settings";
+    exec = "qt6ct";
+    terminal = true;
+    noDisplay = true;
+  };
   #Htop
   xdg.desktopEntries.htop = {
     name = "htop";

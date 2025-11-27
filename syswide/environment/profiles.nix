@@ -7,11 +7,14 @@
 }: {
   environment.loginShellInit = ''
     tmux new-session -d -s default 2>/dev/null || true
+    if uwsm check may-start && uwsm select; then
+      exec uwsm start default
+    fi
   '';
-  services.displayManager.gdm = {
-    enable = true;
-    wayland = true;
-  };
+  # services.displayManager.gdm = {
+  #   enable = true;
+  #   wayland = true;
+  # };
   programs.uwsm = {
     enable = true;
     waylandCompositors = {

@@ -1,3 +1,17 @@
-# Personal flakes for nixos, server and non-nixos distros
+### Personal flakes for non-nixos setup.
 
-## Visit the branches for more
+### How to install!
+
+Clone the repo:
+
+```
+git clone https://github.com/infraflakes/wsl-flakes.git
+```
+
+Build home manager:
+
+```
+nix run .#homeConfigurations.<username>@<hostname>.activationPackage
+```
+
+---

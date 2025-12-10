@@ -35,14 +35,13 @@
       snix = "srn nix";
       sgit = "srn git";
       archive = "srn archive";
-      music = "serein music";
+      music = "srn music";
       tm = "tmux new-session -A";
       cd = "z";
       cat = "bat";
       rg = "grep";
       se = "sudo -E -s nvim";
       ls = "lsd -l";
-      nvidia-gpu = "__NV_PRIME_RENDER_OFFLOAD=1 __GLX_VENDOR_LIBRARY_NAME=nvidia";
     };
     interactiveShellInit = ''
       fastfetch

@@ -20,6 +20,8 @@
       pkgs.ripgrep
       pkgs.bat
       pkgs.jq
+      pkgs.pulsemixer
+      pkgs.bluetuith
       inputs.srn-coreutils.packages.${pkgs.stdenv.hostPlatform.system}.default
     ];
   };
@@ -28,10 +30,12 @@
     ./apps/fish.nix
     ./apps/fastfetch.nix
     ./apps/nvim.nix
+    ./apps/ghostty.nix
     ./apps/yazi.nix
     ./apps/tmux.nix
     ./apps/container.nix
     ./apps/fonts.nix
+    ./apps/mpd.nix
     #./apps/ollama.nix
     ./apps/misc.nix
   ];

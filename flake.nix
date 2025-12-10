@@ -26,7 +26,7 @@
     # Home Manager
     homeConfigurations."${username}@${hostname}" = home-manager.lib.homeManagerConfiguration {
       inherit pkgs;
-      extraSpecialArgs = {inherit username inputs;};
+      extraSpecialArgs = {inherit username inputs system;};
       modules = [./home/home.nix];
     };
     # Dev Shell

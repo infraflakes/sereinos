@@ -1,30 +1,3 @@
-### Personal flakes for NixOS setup. (ASUS FX507ZU4)
+# Personal flakes for nixos, server and non-nixos distros
 
-### CAUTION!
-
-- Nix files in `syswide` directory are system-wide configurations (asusctl, bootloader, fonts, timezones, users, etc....) and the ones in `home` directory are home manager explicit options.
-
-- Make sure you still have hardware-configuration.nix in /etc/nixos!
-
-### How to install!
-
-Clone the repo:
-
-```
-git clone https://github.com/infraflakes/sereinos.git
-```
-
-Apply changes system wide:
-
-```
-cd serein-nix
-sudo nixos-rebuild switch --impure --flake .#<hostname>
-```
-
-Then set up home manager:
-
-```
-home-manager switch --flake .#<username>@<hostname>
-```
-
----
+## Visit the branches for more

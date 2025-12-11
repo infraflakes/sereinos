@@ -13,5 +13,7 @@
     font-size = 13
     theme = Catppuccin Frappe
     keybind=clear
+    keybind = performable:ctrl+c=copy_to_clipboard
+    keybind = ctrl+v=paste_from_clipboard
   '';
 }

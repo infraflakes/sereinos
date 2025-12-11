@@ -2,15 +2,21 @@
 
 ### How to install!
 
+Make sure nix is installed, personally I prefer Determinate Nix:
+
+```bash
+curl -fsSL https://install.determinate.systems/nix | sh -s -- install --determinate
+```
+
 Clone the repo:
 
-```
-git clone https://github.com/infraflakes/wsl-flakes.git
+```bash
+git clone -b non-nixos https://github.com/infraflakes/nix-flakes.git non-nixos
 ```
 
 Build home manager:
 
-```
+```bash
 nix run .#homeConfigurations.<username>@<hostname>.activationPackage
 ```
 

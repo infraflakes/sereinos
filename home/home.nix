@@ -30,12 +30,9 @@
     ./apps/fish.nix
     ./apps/fastfetch.nix
     ./apps/nvim.nix
-    ./apps/ghostty.nix
     ./apps/yazi.nix
     ./apps/tmux.nix
     ./apps/container.nix
-    ./apps/fonts.nix
-    ./apps/mpd.nix
     #./apps/ollama.nix
     ./apps/misc.nix
   ];

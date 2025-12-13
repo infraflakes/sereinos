@@ -1,4 +1,4 @@
-### Personal flakes for non-nixos setup.
+### Personal flakes for server tooling.
 
 ### How to install!
 
@@ -11,7 +11,7 @@ curl -fsSL https://install.determinate.systems/nix | sh -s -- install --determin
 Clone the repo:
 
 ```bash
-git clone -b non-nixos https://github.com/infraflakes/nix-flakes.git non-nixos
+git clone -b server-tooling https://github.com/infraflakes/nix-flakes.git server-tooling
 ```
 
 Build home manager:

@@ -35,5 +35,6 @@
     ./apps/container.nix
     #./apps/ollama.nix
     ./apps/misc.nix
+    ./apps/fonts.nix
   ];
 }

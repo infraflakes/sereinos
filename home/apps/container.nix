@@ -3,12 +3,13 @@
   pkgs,
   ...
 }: {
-  home.packages = with pkgs; [
-    podman
-  ];
-  home.file.".config/containers/policy.json".text = ''
-    {
-      "default": [{ "type": "insecureAcceptAnything" }]
-    }
-  '';
+  services.podman = {
+    enable = true;
+    settings.registries.search = [
+      "docker.io"
+      "quay.io"
+      "registry.fedoraproject.org"
+      "mirror.gcr.io"
+    ];
+  };
 }
